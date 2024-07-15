@@ -70,7 +70,7 @@ export const ToggleButton = styled.div`
     border-radius: 6px;
     cursor: pointer;
     ${({ active, theme }) =>
-        active && `
+        active==="true" && `
     background: ${theme.primary + 20};
     `
     }
@@ -117,38 +117,44 @@ const Projects = ({openModal,setOpenModal}) => {
                 </Desc>
                 <ToggleButtonGroup >
                     {toggle === 'all' ?
-                        <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
+                        <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
                         :
                         <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
                     }
                     <Divider />
                     {toggle === 'web app' ?
-                        <ToggleButton active value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
+                        <ToggleButton active="true" value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
                         :
                         <ToggleButton value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
                     }
                     <Divider />
                     {toggle === 'android app' ?
-                        <ToggleButton active value="android app" onClick={() => setToggle('android app')}>ANDROID APP'S</ToggleButton>
+                        <ToggleButton active="true" value="android app" onClick={() => setToggle('android app')}>ANDROID APP'S</ToggleButton>
                         :
                         <ToggleButton value="android app" onClick={() => setToggle('android app')}>ANDROID APP'S</ToggleButton>
                     }
                     <Divider />
                     {toggle === 'machine learning' ?
-                        <ToggleButton active value="machine learning" onClick={() => setToggle('machine learning')}>MACHINE LEARNING</ToggleButton>
+                        <ToggleButton active="true" value="machine learning" onClick={() => setToggle('machine learning')}>MACHINE LEARNING</ToggleButton>
                         :
                         <ToggleButton value="machine learning" onClick={() => setToggle('machine learning')}>MACHINE LEARNING</ToggleButton>
+                    }
+                    <Divider />
+                    {toggle === 'gen ai' ?
+                        <ToggleButton active="true" value="gen ai" onClick={() => setToggle('gen ai')}>GEN AI</ToggleButton>
+                        :
+                        <ToggleButton value="gen ai" onClick={() => setToggle('gen ai')}>GEN AI</ToggleButton>
                     }
                 </ToggleButtonGroup>
                 <CardContainer>
                     {toggle === 'all' && projects
-                        .map((project) => (
-                            <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal} />
+                        .map((project, index) => (
+                            <ProjectCard key={index} project={project} openModal={openModal} setOpenModal={setOpenModal} />
                         ))}
                     {projects
                         .filter((item) => item.category == toggle)
-                        .map((project) => (
-                            <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal} />
+                        .map((project, index) => (
+                            <ProjectCard key={index} project={project} openModal={openModal} setOpenModal={setOpenModal} />
                         ))}
                 </CardContainer>
             </Wrapper>

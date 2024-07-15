@@ -34,6 +34,7 @@ const Wrapper = styled.div`
     gap: 12px;
     @media (max-width: 960px) {
         flex-direction: column;
+        margin-bottom: 80px;
     }
 `
 
@@ -82,7 +83,7 @@ const Experience = () => {
                 <TimeLineSection>
                     <Timeline>
                         {experiences.map((experience, index) => (
-                            <TimelineItem>
+                            <TimelineItem key={index}>
                                 <TimelineSeparator>
                                     <TimelineDot variant='outlined' color='secondary' />
                                     {index !== experiences.length && <TimelineConnector style={{ background: '#854CE6'}} />}

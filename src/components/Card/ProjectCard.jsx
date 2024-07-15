@@ -128,15 +128,15 @@ const ProjectCards = ({ project, setOpenModal }) => {
         <Card onClick={() => setOpenModal({ state: true, project: project })}>
             <Image src={project.image} />
             <Tags>
-                {project.tags?.map((tag) => (
-                    <Tag>{tag}</Tag>
+                {project.tags?.map((tag, index) => (
+                    <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
                 <Title>{project.title}</Title>
                 <Description>{project.description}</Description>
             </Details>
-            <Button href='https://vercel.com/hirdesh-khandelwals-projects'>View Project</Button>
+            <Button href={project.link ? project.link : project.github} target='_blank+_'>{project.link ? "View Project" : "View Source Code"}</Button>
         </Card>
     )
 }

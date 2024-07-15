@@ -26,7 +26,7 @@ export const HeroBg = styled.div`
     position: absolute;
     display: flex;
     justify-content: end;
-    top: 0;
+    top: 0px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -34,7 +34,7 @@ export const HeroBg = styled.div`
     height: 100%;
     max-width: 1360px;
     overflow: hidden;
-    padding: 0 30px;
+    padding: 110px 30px;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -178,7 +178,7 @@ const ResumeButton = styled.a`
     display: block;
     text-decoration: none;
     width: 100%;
-    max-width: 500px;
+    max-width: 520px;
     text-align: center;
     padding: 16px 0;
     color:${({ theme }) => theme.white};
