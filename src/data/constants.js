@@ -212,6 +212,24 @@ export const skills = [
 export const experiences = [
     {
         id: 0,
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmXAeQf3EwFBzk7X695p73YCH8Lm2onldqoQ&s",
+        role: "Brainwave Matrix Solutions",
+        company: "Web Development Intern",
+        date: "Aug 2024 - Sep 2024",
+        desc: "Worked on different web development projects.",
+        doc: "https://res.cloudinary.com/itshirdeshk/image/upload/v1726931908/Brainwave_hmif8n.jpg",
+    },
+    {
+        id: 1,
+        img: "https://res.cloudinary.com/itshirdeshk/image/upload/v1726930771/Headstarter_qamq3t.jpg",
+        role: "SWE Fellowship",
+        company: "Headstarter AI",
+        date: "May 2024 - July 2024",
+        desc: "Headstarter Summer Fellow. This is a 7-week software engineering fellowship. The program will consist of building 5 AI projects, 5 weekend hackathons, 1 final project with 1000+ users, interview prep, resume reviews and feedback from real software engineers.",
+        doc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv-4PfkPZZuRTe3aboRo9M8MhqDruiZq2fw&s",
+    },
+    {
+        id: 2,
         img: "https://avatars.githubusercontent.com/u/39153675?s=280&v=4",
         role: "Open Source Contributor",
         company: "GirlScript Summer of Code",
@@ -220,7 +238,7 @@ export const experiences = [
         doc: "https://res.cloudinary.com/itshirdeshk/image/upload/v1721051177/contributor_badge_2024_tgovmm.png",
     },
     {
-        id: 1,
+        id: 3,
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXFkM6OLkGL2A33dpKVBjSKSq9b9wO1FXGg&s",
         role: "Open Source Contributor",
         company: "Social Summer of Code",
@@ -233,7 +251,7 @@ export const experiences = [
 export const education = [
     {
         id: 0,
-        img: "https://storage.googleapis.com/ezap-prod/colleges/6968/raja-balwant-singh-engineering-technical-campus-agra-logo.jpg",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5xh-TiwOBmk8xZSPC_br_loloibcEupp5MQ&s",
         school: "Raja Balwant Singh Engineering Technical Campus",
         date: "Sep 2021 - Jul 2025",
         grade: "8.0 CGPA",
@@ -280,6 +298,44 @@ export const projects = [
     },
     {
         id: 1,
+        title: "Mystery Messenger",
+        description:
+            "Mystery Messenger lets you message anyone anything anonymously.",
+        image:
+            "https://res.cloudinary.com/itshirdeshk/image/upload/v1726932572/Screenshot_424_p58hcc.png",
+        tags: [
+            "Next Js",
+            "Shadcn Ui",
+            "Tailwind Css",
+            "MongoDB",
+            "Vercel AI SDK",
+            "Gemini API"
+        ],
+        category: "web app",
+        github: "https://github.com/itshirdeshk/Mystery-Messenger",
+        link: "https://mystery-messenger-six.vercel.app/",
+    },
+    {
+        id: 2,
+        title: "Crypted Vault",
+        description:
+            "Crypted Vault lets you to upload and store image with web3 security.",
+        image:
+            "https://res.cloudinary.com/itshirdeshk/image/upload/v1726937896/Screenshot_438_ahmnks.png",
+        tags: [
+            "React Js",
+            "Nodejs",
+            "Expressjs",
+            "MongoDB",
+            "Tailwind Css",
+            "Solidity",
+        ],
+        category: "web app",
+        github: "https://github.com/itshirdeshk/Crypto-Vault",
+        link: "https://crypto-vault-self.vercel.app/",
+    },
+    {
+        id: 3,
         title: "Chatting Hub",
         description:
             "Chatting Hub is a full stack web application where you can chat with your friends in realtime.",
@@ -307,7 +363,7 @@ export const projects = [
         link: "https://pathfinding-visualizer-plum.vercel.app/",
     },
     {
-        id: 3,
+        id: 4,
         title: "Notes Hub",
         description:
             "Notes Hub is simple to use free note taking app made with NodeJs, EJS and MongoDB.",
@@ -319,7 +375,7 @@ export const projects = [
         link: "https://notes-hub-ufwa.onrender.com/",
     },
     {
-        id: 4,
+        id: 5,
         title: "Socio Bot",
         description:
             "Socio Bot helps you in creating Likedin, Twitter and Facebook posts by taking your daily day to day events.",
@@ -331,7 +387,7 @@ export const projects = [
         link: "https://t.me/socio_xyz_bot",
     },
     {
-        id: 5,
+        id: 6,
         title: "Video Calling App",
         description:
             "By using Video Calling App, you can create a room where you can video call with the other person that joined the room.",
@@ -343,7 +399,7 @@ export const projects = [
         link: "https://backend-practice-nine.vercel.app/",
     },
     {
-        id: 6,
+        id: 7,
         title: "Realtime Tracker",
         description:
             "Realtime Tracker helps you to track the location of whom that connected on the app.",
@@ -355,7 +411,7 @@ export const projects = [
         link: "https://realtime-tracker-76ek.onrender.com",
     },
     {
-        id: 7,
+        id: 8,
         title: "Pin Lite",
         description:
             "Pin Lite helps you to create pins where you can upload your images.",
@@ -367,7 +423,7 @@ export const projects = [
         link: "https://pin-lite.onrender.com/",
     },
     {
-        id: 8,
+        id: 9,
         title: "SMS Spam Classifier",
         description:
             "SMS Spam Classifier classify your sms, email or messages as spam or not.",
@@ -378,7 +434,7 @@ export const projects = [
         github: "https://github.com/itshirdeshk/SMS-Spam-Classifier",
     },
     {
-        id: 8,
+        id: 10,
         title: "Movie Recommender System",
         description:
             "Movie Recommender System recommends you similar movies based on the entered movie.",
@@ -389,7 +445,7 @@ export const projects = [
         github: "https://github.com/itshirdeshk/Movie-Recommender-System",
     },
     {
-        id: 9,
+        id: 11,
         title: "Laptop Price Predictor",
         description:
             "Laptop Price Predictor predicts you the price based on the provided laptop specification.",
@@ -400,7 +456,7 @@ export const projects = [
         github: "https://github.com/itshirdeshk/Laptop-Price-Predictor",
     },
     {
-        id: 10,
+        id: 12,
         title: "News Research Tool",
         description:
             "News Research Tool helps you to research on the data avaiable on the websites.",
@@ -411,7 +467,7 @@ export const projects = [
         github: "https://github.com/itshirdeshk/GenAI-Projects/tree/main/News%20Research%20Tool",
     },
     {
-        id: 10,
+        id: 13,
         title: "Chat with PDF",
         description:
             "Chat with PDF helps you to chat with your PDFs.",
@@ -422,7 +478,7 @@ export const projects = [
         github: "https://github.com/itshirdeshk/Gemini-Projects/tree/main/Chat%20with%20PDF",
     },
     {
-        id: 11,
+        id: 14,
         title: "YT Transcriber",
         description:
             "YT Transcriber gives you the short summary of the youtube video.",
@@ -433,7 +489,7 @@ export const projects = [
         github: "https://github.com/itshirdeshk/Gemini-Projects/tree/main/YT%20Transcriber",
     },
     {
-        id: 12,
+        id: 15,
         title: "Allen",
         description:
             "Allen is a voice assistant app that can give answers to your questions.",
@@ -444,7 +500,7 @@ export const projects = [
         github: "https://github.com/itshirdeshk/Flutter-Projects/tree/master/allen",
     },
     {
-        id: 13,
+        id: 16,
         title: "My Gpt",
         description:
             "My Gpt helps you to ask questions and then it will give answers to your questions.",
