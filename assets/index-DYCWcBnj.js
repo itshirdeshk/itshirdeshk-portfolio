@@ -701,9 +701,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     margin-bottom: 16px;
 `,uk=P.img`
     height: 50px;
-    background-color: #fff;
+    // background-color: #fff;
     border-radius: 10px;
-    padding: 8px;
+    // padding: 8px;
 `,ck=P.div`
     display: flex;
     flex-direction: column;
